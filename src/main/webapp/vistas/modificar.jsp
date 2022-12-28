@@ -23,60 +23,100 @@
 
     </head>
     <body>        
+        
+        <nav class="navbar bg-primary class">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="vistas/imagenes/logo.png" alt="Logo" >
+      </nav>
+        
+        
         <div class="container" >
-            <h1 class="text-center" >Modificar Socio</h1>
+            <h1 class="text-left" >Modificar Socio</h1>
                 <div class="row" >
                     <%
 				String id=request.getParameter("id");
-				int mid;
-				//mid=Integer.parseInt(id);
-                             
+				int mid;				                          
 				mid= Integer.parseInt(id);
                                 Socios resultado=null;
 				SociosDAO  socio=new SociosDAO();
 				resultado=socio.mostrarSocio(mid);				
 		    %>
-                   
+
+
+                                
                     
-                    <form class="p-5" method="POST" action="SociosController?accion=actualizar">
-                         <div class="mb-2">
+                    
+                    <form style="font-size: 12px" class="p-4" method="POST" action="SociosController?accion=actualizar">
+                          <div class="col-5">   
+                            <div  "class="ml-auto">
                             <label for="id" class="form-label" >id</label>
-                            <input type="text" class="form-control" id="id" name="id" readonly="readonly" value=<%=resultado.getIdSocio()%> >                          
-                        </div> 
-                        <div class="mb-2">
+                           <!-- <input type="text" class="form-control" id="id" name="id" readonly="readonly" value=<%=resultado.getIdSocio()%> >    -->                      
+                          <input type="text" style="font-size: 13px" class="form-control" id="id" name="id" readonly="readonly" value=<%=resultado.getIdSocio()%> >                          
+                           </div> 
+                            </div> 
+                           
+                         <div class="col-5">   
+                            <div "class="ml-auto">
                             <label for="nombre" class="form-label" >Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" value=<%=resultado.getNombre() %>   >                       
+                            <input type="text" style="font-size: 13px" class="form-control" id="nombre" name="nombre" value=<%=resultado.getNombre() %>   >                       
+                        </div>
                         </div> 
-                        <div class="mb-2">
+                        
+                         <div class="col-5">   
+                            <div "class="ml-auto">
                             <label for="apellido" class="form-label" >Apellido</label>
-                            <input type="text" class="form-control" id="apellido" name="apellido" value=<%=resultado.getApellido() %>   >                       
+                            <input type="text" style="font-size: 13px" class="form-control" id="apellido" name="apellido" value=<%=resultado.getApellido() %>   >                       
                         </div> 
-                         <div class="mb-2">
+                         </div>
+                        
+                          <div class="col-5">   
+                            <div "class="ml-auto">
                             <label for="direccion" class="form-label" >Direccion</label>
-                            <input type="text" class="form-control" id="direccion" name="direccion"value=<%=resultado.getDireccion() %>  >                          
-                        </div> 
-                         <div class="mb-2">
+                            <input type="text" style="font-size: 13px" class="form-control" id="direccion" name="direccion"value=<%=resultado.getDireccion() %>  >                          
+                        </div>
+                        </div>
+                        
+                         <div class="col-5">    
+                           <div class="ml-auto">
                             <label for="localidad" class="form-label" >Localidad</label>
-                            <input type="text" class="form-control" id="localidad" name="localidad" value=<%=resultado.getLocalidad() %>   >                          
-                        </div> 
-                          <div class="mb-2">
+                            <input type="text" style="font-size: 13px" class="form-control" id="localidad" name="localidad" value=<%=resultado.getLocalidad() %>   >                          
+                        </div>
+                        </div>
+                        
+                           <div class="col-5">    
+                           <div class="ml-auto">
                             <label for="fnac" class="form-label" >Fecha Nac</label>
-                            <input type="date" class="form-control" id="fnac" name="fnac" value=<%=resultado.getFnac() %>  >                          
+                            <input type="date" style="font-size: 13px" class="form-control" id="fnac" name="fnac" value=<%=resultado.getFnac() %>  >                          
                         </div> 
-                        <div class="mb-2">
+                          </div>
+                        
+                       <div class="col-5">    
+                           <div class="ml-auto">
+                               
                             <label for="mail" class="form-label" >E-Mail</label>
-                            <input type="text" class="form-control" id="mail" name="mail" value=<%=resultado.getMail()%>  >                          
-                        </div>  
-                        <div class="mb-2">
+                            <input type="text" style="font-size: 13px" class="form-control" id="mail" name="mail" value=<%=resultado.getMail()%>  >                          
+                        </div>
+                        </div>
+                        
+                         <div class="col-5">    
+                           <div class="ml-auto">
                             <label for="telefono" class="form-label" >Telefono</label>
-                            <input type="text" class="form-control" id="telefono" name="telefono" value=<%=resultado.getTelefono()%> >                          
+                            <input type="text" style="font-size: 13px" class="form-control" id="telefono" name="telefono" value=<%=resultado.getTelefono()%> >                          
                         </div> 
-
-                         </div>                        
-                        <button type="submit" class="btn btn-primary" >Modificar </button>
-
-                    </form>                
-                </div>
+                         </div> 
+                        
+                         <div container>    
+                         <button style="width: 440px" type="submit" class="btn btn-primary mt-3 ml-2">Modificar </button>
+                         <button style="width: 50px" type="button" class="btn btn-primary mt-3 ml-2" ><a href="http://localhost:8080/crud__22548/vistas/socios" >Volver </a></button>-->
+                                                                                                
+                         </div>
+            
+                   
+                  </form>  
+                    
+                             
+          </div>
        </div>  
     </body>
 </html>
