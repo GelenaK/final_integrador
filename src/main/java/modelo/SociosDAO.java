@@ -5,25 +5,20 @@
 package modelo;
 
 import Config.Conexion;
-//import com.sun.org.apache.xerces.internal.impl.xs.util.XS10TypeHelper;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.Date;
-
-
-
 
 /**
  *
- * @author 
+ * @author windows
  */
-
 public class SociosDAO 
 {
     Connection conexion;
@@ -59,6 +54,7 @@ public class SociosDAO
                String email=rs.getString("email");
                String telefono=rs.getString("telefono");
                boolean activo=rs.getBoolean("activo");                 
+               
                Socios s1=new Socios(id,nombre,apellido,direccion,localidad,fecha,email,telefono,activo);
                lista.add(s1);                
 
@@ -187,15 +183,6 @@ public class SociosDAO
             return false;
         }
     }
-
-
-
-
-
-
-
-
-
 
 
 

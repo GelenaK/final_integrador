@@ -36,6 +36,8 @@
 				SociosDAO  socio=new SociosDAO();
 				resultado=socio.mostrarSocio(mid);				
 		    %>
+                   
+                    
                     <form class="p-5" method="POST" action="SociosController?accion=actualizar">
                          <div class="mb-2">
                             <label for="id" class="form-label" >id</label>

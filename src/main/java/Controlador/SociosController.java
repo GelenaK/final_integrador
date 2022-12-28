@@ -6,6 +6,7 @@ package Controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,13 +17,13 @@ import modelo.SociosDAO;
 import java.time.LocalDate;
 import javax.servlet.RequestDispatcher;
 
-@WebServlet(name = "SociosController", urlPatterns = {"/SociosController"})
+//@WebServlet(name = "SociosController", urlPatterns = {"/SociosController"})
 
 public class SociosController extends HttpServlet 
 {
 
     public SociosController() 
-    {//es super constructor: permite crear objeto del tipo SociosController pasándole n cantidad de argumentos
+    {
         super();        
     }
 
@@ -41,9 +42,8 @@ public class SociosController extends HttpServlet
 	    }
 
         String accion;
-        //RequestDispatcher: clase q es interfaz para intercambio de info entre un servlet y html
         RequestDispatcher dispatcher=null;
-        accion=request.getParameter("accion"); //getParameter: metodo para tomar el valor que viene en la URL (accion)
+        accion=request.getParameter("accion");
         if(accion==null||accion.isEmpty())
         {
             dispatcher=request.getRequestDispatcher("vistas/socios.jsp");            
@@ -107,4 +107,5 @@ public class SociosController extends HttpServlet
     {
         return "Short description";
     }// </editor-fold>
+
 }

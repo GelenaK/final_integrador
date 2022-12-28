@@ -21,7 +21,7 @@ public class Socios
     private String mail;
     private String telefono;
     private boolean activo;
-    
+  
     
     public Socios(int idSocio,String nombre,String apellido,String direccion,String localidad,LocalDate fnac,String mail,String telefono, boolean activo)
     {
@@ -33,7 +33,8 @@ public class Socios
         this.fnac=fnac;
         this.mail=mail;
         this.telefono=telefono;
-        this.activo=activo;        
+        this.activo=activo;  
+       
     }
 
     public int getIdSocio() {
@@ -91,6 +92,8 @@ public class Socios
     public void setMail(String mail) {
         this.mail = mail;
     }
+
+    
 
     public String getTelefono() {
         return telefono;

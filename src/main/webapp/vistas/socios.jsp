@@ -1,7 +1,7 @@
 <%-- 
     Document   : socios
     Created on : 25 dic 2022, 13:31:03
-    Author     : Alejandro
+    Author     : A
 --%>
 
 <%@page import="modelo.SociosDAO"%>
@@ -10,43 +10,104 @@
 <%@page import="java.util.List"%>
 
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
-
-    </head>
-    <body>
-        <!--<h1>Listado de Socios del Gym</h1>-->
 
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
 <html>
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
-
+           <!-- CSS only -->
+        
+           
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
-        <h1>Listado de Socios del Gym</h1>
+             
+       <nav class="navbar bg-primary class">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="vistas/imagenes/logo.png" alt="Logo" >
+      Bootstrap
+    </a>
+  </div>
+</nav>
+        
+                   
 
+       <!-- <div>
+            <img src="vistas/imagenes/foto1.jpg"/>
+        </div> -->
+        
+        
+        <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col">
+      <div class="card h-100">
+        <img src="vistas/imagenes/cintas.jpg" class="card-img-top" alt="" >
 
+          <div>
+              <a  id="mibtn"class="btn btn-warning" href="https://www.google.com/search?q=cintas+para+correr&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEoJj69pr8AhWbrJUCHdejD3MQ_AUoAXoECAEQAw&biw=1366&bih=568&dpr=1" target="_blank" role="button"><h4><b style ="text-align: center">Cinta</b></h4></a>
+         <!-- <a  id="mibtn"class="btn btn-primary" href="#" role="button"><b>React</b></a>-->
+          </div>                                              
+        <div class="card-body" >
+         
+        </div>   
+      </div>
+    </div>
+
+    <div class="col">
+      <div   class="card h-100">
+        <img src="vistas/imagenes/bici.jpg" class="card-img-top" alt="">
+        
+          <div>        
+            <a id="mibtn" class="btn btn-warning" href="#" role="button" ><b>Bicicleta Fija</b></a>
+            
+            </div>                                        
+        <div class="card-body">
+         
+        </div>                    
+      </div>      
+    </div>
+
+     <div class="col">
+      <div   class="card h-100">
+        <img src="vistas/imagenes/entrenam.jpg" class="card-img-top" alt="">
+        
+          <div>        
+            <a id="mibtn" class="btn btn-secondary bg-" href="#" role="button" ><b>Entrenamiento</b></a>
+            <a id="mibtn"class="btn btn-warning" href="#" role="button"><b>Startups</b></a>   
+            </div>                                        
+        <div class="card-body">
+          
+        </div>                    
+      </div>      
+    </div>   
+        
+              
+        
+        
+  </div>
+</div>                         
+        
+          <h1>Listado de Socios del Gym</h1>  
+        
+            
+        
+        
+        
+        
+        
         <div class="container">
             <div class="row">   
                 <a class="btn btn-primary col-4 m-4" href="SociosController?accion=nuevo">Agregar Socio</a>
-
+              
                 <table class="table table-primary">
                     <thead>
                             <th>id</th>
@@ -101,6 +162,6 @@
 
 
 
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
