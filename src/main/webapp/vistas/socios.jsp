@@ -30,85 +30,89 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
     <body>
              
-       <nav class="navbar bg-primary class">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+ <nav class="navbar bg-primary class">
+       <div class="container-fluid">
+       <a class="navbar-brand" href="#">
       <img src="vistas/imagenes/logo.png" alt="Logo" >
-      Bootstrap
-    </a>
-  </div>
+      <!-- <div style> No s sin entrenar </div>-->
+      </a>
+      </div>
 </nav>
-        
-                   
+               
 
        <!-- <div>
             <img src="vistas/imagenes/foto1.jpg"/>
         </div> -->
         
         
-        <div class="container">
+        <div style= "margin-top: 5px" class="container">
     <div class="row row-cols-1 row-cols-md-3 g-4">
      <div class="col">
-      <div class="card h-100">
+      <div class="card h-50">
         <img src="vistas/imagenes/cintas.jpg" class="card-img-top" alt="" >
 
           <div>
-              <a  id="mibtn"class="btn btn-warning" href="https://www.google.com/search?q=cintas+para+correr&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEoJj69pr8AhWbrJUCHdejD3MQ_AUoAXoECAEQAw&biw=1366&bih=568&dpr=1" target="_blank" role="button"><h4><b style ="text-align: center">Cinta</b></h4></a>
-         <!-- <a  id="mibtn"class="btn btn-primary" href="#" role="button"><b>React</b></a>-->
+              <a style="margin-top: 3px "class="btn btn-secondary bg-" href="https://www.google.com/search?q=cintas+para+correr&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEoJj69pr8AhWbrJUCHdejD3MQ_AUoAXoECAEQAw&biw=1366&bih=568&dpr=1" target="_blank" role="button" ><b>Cinta</b></a>
+        
           </div>                                              
-        <div class="card-body" >
-         
-        </div>   
+        <div class="card-body"mt-5 ></div>   
       </div>
     </div>
 
     <div class="col">
-      <div   class="card h-100">
+      <div   class="card h-50">
         <img src="vistas/imagenes/bici.jpg" class="card-img-top" alt="">
         
           <div>        
-            <a id="mibtn" class="btn btn-warning" href="#" role="button" ><b>Bicicleta Fija</b></a>
-            
+            <a style="margin-top: 3px "class ="btn btn-secondary bg-" href="#" role="button" ><b>Bicicleta Fija</b></a>
             </div>                                        
-        <div class="card-body">
-         
-        </div>                    
+        <div class="card-body"></div> 
+                                  
       </div>      
     </div>
 
      <div class="col">
-      <div   class="card h-100">
+      <div   class="card h-50">
         <img src="vistas/imagenes/entrenam.jpg" class="card-img-top" alt="">
         
           <div>        
-            <a id="mibtn" class="btn btn-secondary bg-" href="#" role="button" ><b>Entrenamiento</b></a>
-            <a id="mibtn"class="btn btn-warning" href="#" role="button"><b>Startups</b></a>   
+            <a style="margin-top: 3px "class="btn btn-secondary bg-" href="#" role="button" ><b>Entrenamiento</b></a>
+             
             </div>                                        
-        <div class="card-body">
+        <div class="card-body"></div>
           
-        </div>                    
+                            
       </div>      
     </div>   
         
-              
-        
-        
-  </div>
+          
 </div>                         
-        
-          <h1>Listado de Socios del Gym</h1>  
-        
+         <!--<div class="d-grid p-2 bg-primary text-white">Asociáte</div>-->
             
+         <div>
+            
+             <h1 class="d-grid p-0 bg-primary text-white display-3 fu-bold text-center">Asociáte <a class="btn btn-lg btn-secondary " href="SociosController?accion=nuevo" ><h1 style="color:aqua ">Aquí <i class="fa-solid fa-person-running"></i></h1></a>    
+      
+         
+         <!--<h1 class="d-grid p-2 bg-primary text-white display-3 fu-bold text-center">Asociáte <a class="btn btn-lg btn-secondary " href="SociosController?accion=nuevo" ><h1>Aquí</h1></a></h1>-->
+         
+         
+       <!--  <a class="btn btn-primary " href="SociosController?accion=nuevo">Aquí</a>-->
+         
+         </div>
+         <section>
+             <div style="height: 60px" >
+             <p></p>
+         </div>
+         <h4 class="display -block text-center">Listado de Socios </h4>  
         
-        
-        
-        
+         
         
         <div class="container">
             <div class="row">   
-                <a class="btn btn-primary col-4 m-4" href="SociosController?accion=nuevo">Agregar Socio</a>
+              <!--   <a class="btn btn-primary col-4 m-4" href="SociosController?accion=nuevo">Agregar Socio</a>-->
               
-                <table class="table table-primary">
+                <table style="font-size: 12px" class="table table-striped">
                     <thead>
                             <th>id</th>
                             <th>Nombre</th>
@@ -143,23 +147,57 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                          <td><%=resultado.get(i).getFnac()%></td>
                          <td><%=resultado.get(i).getTelefono()%></td>
                          <td><%=resultado.get(i).getMail()%></td>
-                         <td class="text-center"><a href=<%=ruta%>> <i class="fa-solid fa-arrow-right-arrow-left"></i> </a></td>
-			 <td class="text-center"><a href=<%=rutaE%>><i class="fa-solid fa-arrow-down"></i> </a></td>
+                     
+                         
+                      
+                         <td class="text-center"><a href=<%=ruta%>><i class="fa-solid fa-marker"></i> </a></td>
+		
+                         <td class="text-center"><a href=<%=rutaE%>><i class="fa-solid fa-delete-left"></i></a></td>
                     </tr>
                     <%
                         }
                     %>
 
                 </table>
-
-
-
-
-            </div>
-
-
-        </div>
-
+</section>
+                  
+ 
+              
+                    
+                        <div class="container-fluid">
+        <footer>
+           <nav class="navbar navbar-dark navbar-expand-lg">        
+            
+             <!--<div class="justify-content-end" id="navbarSupportedContent">-->
+               <ul class="navbar-nav mx-auto mb-7 mb-lg-0">
+                 <li class="nav-item" > 
+                   <a  class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
+                 </li>
+   
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Prensa</a>
+                 </li>
+   
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Conferencias</a>
+                 </li>
+                
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Términos y condiciones</a>
+                 </li>
+   
+                 <li class="nav-item">
+                   <a  class="nav-link" href="#" >Privacidad</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#" >Estudiantes</a>
+                 </li>
+               </ul>
+                    
+         </nav>
+        </footer>
+     </div>
+              
 
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
