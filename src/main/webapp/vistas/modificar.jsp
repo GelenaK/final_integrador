@@ -27,7 +27,7 @@
         <nav class="navbar bg-primary class">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="vistas/imagenes/logo.png" alt="Logo" >
+      <img src="vistas/imagenes/logo.png" alt="Logo" style="margin-left: 20px">
      </a>
        <div style="margin-right: 100px">
                <div><p style="font-family: Righteous ;color:white">- Funcional Cross</p></div>
@@ -48,11 +48,12 @@
                     <div>
                     <img src="vistas/imagenes/runner.png "style="width: 40px; position: relative;margin-left: 300px"  class="card-img-top" alt="">
                     </div>
-                    <div style="background-color: #5C636B; width: 460px; margin-left: 20px; height: 40px; margin-top: -40px">
-                        <input onClick="history.go(-1)" type="button" value="Volver"name="btnVolver" style=" margin-left: 320px; margin-top: 2px;width: 100px; height: 38px;background-color:#5C636B;font-size:14pt;font-weight:bold;color:aqua; border-style: none">                                                                          
+                      <div style="background-color: #5C636B; width: 460px; margin-left: 30px; height: 40px; margin-top: -40px">
+                        <input onClick="history.go(-1)" type="button" value="Volver"name="btnVolver" style=" margin-left: 300px; margin-top: 2px;width: 100px; height: 38px;background-color:#5C636B;font-size:14pt;font-weight:bold;color:aqua; border-style: none">                                                                          
                          </div> 
-                             
-                              
+                    
+                  
+            
 
                     <%
 				String id=request.getParameter("id");
@@ -64,11 +65,10 @@
 		    %>
 
 
-                   
-                        
+                         
                    
                     
-                    <form style="font-size: 12px" class="p-4" method="POST" action="SociosController?accion=actualizar">
+                    <form style="font-size: 12px;margin-top: -10px" class="p-4" method="POST" action="SociosController?accion=actualizar">
                           <div class="col-5">   
                             <div  "class="ml-auto">
                             <label for="id" class="form-label" >id</label>
@@ -138,7 +138,18 @@
                          </form> 
                         
                          
-          </div>
-       </div>  
+        
+
+        </div>   
+                        
+                                  <div style=" position: relative;background-color: lightgray;height: 550px;width: 800px;margin-left: 500px; margin-top: -615px;font-family:Righteous;font-size: 24px"  class="border"> 
+                                            <p style="font-family:Righteous;font-size: 24px;margin-left: 65px;margin-top: 50px;color: blue">13 razones para hacer Spinning todos los días</p>           
+                       <div
+                            <div style="position: relative;margin-left:60px;margin-top: 60px">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zo9MXvS2EHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        </div>
+                       </div>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
