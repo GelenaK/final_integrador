@@ -16,8 +16,9 @@ import modelo.Socios;
 import modelo.SociosDAO;
 import java.time.LocalDate;
 import javax.servlet.RequestDispatcher;
+import javax.swing.JOptionPane;
 
-//@WebServlet(name = "SociosController", urlPatterns = {"/SociosController"})
+@WebServlet(name = "SociosController", urlPatterns = {"/SociosController"})
 
 public class SociosController extends HttpServlet 
 {
@@ -52,10 +53,11 @@ public class SociosController extends HttpServlet
 		else if(accion.equals("modificar"))
 		{
 			dispatcher=request.getRequestDispatcher("vistas/modificar.jsp");
+                        
 		}
 		else if(accion.equals("actualizar"))
 		{                        
-                        int id=Integer.parseInt(request.getParameter("id"));
+                        int id=Integer.parseInt (request.getParameter("id"));
                         String nombre=request.getParameter("nombre");
                         String apellido=request.getParameter("apellido");
                         String direccion=request.getParameter("direccion");
@@ -89,7 +91,11 @@ public class SociosController extends HttpServlet
                         Socios s1=new Socios(0,nombre,apellido,direccion,localidad,fecha,email,telefono,true);
 		        sociosDAO.InsertSocios(s1);		
 			dispatcher=request.getRequestDispatcher("vistas/socios.jsp");
-		}        
+		}  
+        
+        
+        
+        
         dispatcher.forward(request, response); 
     }
 

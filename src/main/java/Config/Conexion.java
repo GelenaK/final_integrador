@@ -54,7 +54,9 @@ public Connection getConnection()
         
         while (rs.next())
         {
-          int id=rs.getInt("idsocio");
+          //int id=rs.getInt("idsocio");
+          int id=rs.getInt("idSocio");
+          
           String apellido = rs.getString("apellido");
           
           
