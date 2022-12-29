@@ -27,10 +27,34 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  
+    
+  <script>
+  function eliminarElemento(event) {
+    if (confirm('¿Estás seguro de que querés eliminar este socio?')) {
+      var elemento = document.getElementById('idSocio');
+
+      elemento.parentNode.removeChild(elemento);
+    } else {
+      // Cancelar el evento de clic en el botón
+      event.preventDefault();
+    }
+  }
+</script>
+
+
+
+
+        
+    
     </head>
 
+    
     <body>
              
+     
+        
+        
  <nav class="navbar bg-primary class">
        <div class="container-fluid">
        <a class="navbar-brand" href="#">
@@ -49,11 +73,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       </div>
 </nav>
         
-          
-         
-          <!-- <div>
-            <img src="vistas/imagenes/foto1.jpg"/>
-        </div> -->
+               
         
         
         <div style= "margin-top: 5px" class="container">
@@ -163,7 +183,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                       
                          <td class="text-center"><a href=<%=ruta%>><i class="fa-solid fa-marker"></i> </a></td>
 		
-                         <td class="text-center"><a href=<%=rutaE%>><i class="fa-solid fa-delete-left"></i></a></td>
+                         
+                         <td  onclick="eliminarElemento(event)" class="text-center"><a href=<%=rutaE%>><i onclick="eliminarElemento()"class="fa-solid fa-delete-left"></i></a></td>
                     </tr>
                     <%
                         }
