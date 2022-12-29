@@ -26,6 +26,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
            
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <script src="https://kit.fontawesome.com/2cbbc87d30.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -33,14 +34,24 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
  <nav class="navbar bg-primary class">
        <div class="container-fluid">
        <a class="navbar-brand" href="#">
-      <img src="vistas/imagenes/logo.png" alt="Logo" >
+      <img src="vistas/imagenes/logo.png" alt="Logo" style="margin-left: 20px" >
       <!-- <div style> No s sin entrenar </div>-->
       </a>
+           <div style="margin-right: 100px">
+               <div><p style="font-family: Righteous ;color:white">- Funcional Cross</p></div>
+             <div> <p style="font-family: Righteous;color:white">- Sobrecarga</p></div>
+              <div> <p style="font-family: Righteous;color:white">- Rehabilitación</p></div>
+             
+              <div style="position: relative; margin-left: 200px ;margin-top: -120px">
+               <div><p style="font-family: Righteous ;color:white">- Running</p></div>
+               <div><p style="font-family: Righteous ;color:white">- Spinning</p></div>
+                <div><p style="font-family: Righteous ;color:white">- Vestuarios y sauna</p></div>
       </div>
 </nav>
-               
-
-       <!-- <div>
+        
+          
+         
+          <!-- <div>
             <img src="vistas/imagenes/foto1.jpg"/>
         </div> -->
         
