@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
@@ -34,6 +34,12 @@
         <div class="container" >
             <h1 class="text-left" >Modificar Socio</h1>
                 <div class="row" >
+                    
+                       
+                     
+                             
+                              
+
                     <%
 				String id=request.getParameter("id");
 				int mid;				                          
@@ -107,9 +113,10 @@
                          </div> 
                         
                          <div container>    
-                         <button style="width: 440px" type="submit" class="btn btn-primary mt-3 ml-2">Modificar </button>
-                         <button style="width: 50px" type="button" class="btn btn-primary mt-3 ml-2" ><a href="http://localhost:8080/crud__22548/vistas/socios" >Volver </a></button>-->
-                                                                                                
+                         <button style="width: 200px" type="submit" class="btn btn-primary mt-3 ml-2">Modificar </button>
+                        </div>
+                         <div style="position: relative;margin-top: -38px;margin-bottom: 160px">
+                         <input onClick="history.go(-1)" type="button" value="Volver" name="btnVolver" style=" margin-left: 220px; width: 230px; height: 38px;background-color: grey;font-size: 12pt;color: white;border-radius: 5px;border-color: white">                                                                          
                          </div>
             
                    
