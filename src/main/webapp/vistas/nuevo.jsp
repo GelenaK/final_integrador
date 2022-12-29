@@ -12,6 +12,95 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
+
+        
+<!--<script>
+  function validarFormulario(event) 
+  {
+    // Obtener los valores de los campos de formulario
+    var nombre = document.getElementById('nombre').value;
+    var apellido = document.getElementById('apellido').value;
+    var direccion = document.getElementById('direccion').value;
+    var localidad = document.getElementById('localidad').value;
+    var fecha = document.getElementById('fnac').value;
+    var mail = document.getElementById('mail').value;
+    var telefono = document.getElementById('telefono').value;
+   
+        
+    if (nombre.length < 3) 
+    {
+      alert('El nombre debe tener al menos 3 caracteres');
+      event.preventDefault();
+      return false;
+    }
+    if (apellido.length < 3) 
+    {
+      alert('El apellido debe tener al menos 3 caracteres');
+      event.preventDefault();
+      return false;
+    }
+    if (direccion.length < 3) 
+    {
+      alert('La direccion debe tener al menos 3 caracteres');
+      event.preventDefault();
+      return false;
+    }
+    if (telefono.length < 3) 
+    {
+      alert('El telefono debe tener al menos 3 números');
+      event.preventDefault();
+      return false;
+    }
+    
+    
+    
+    
+    // Verifico si el correo tiene un formato válido
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+    {
+      alert('Por favor ingresá una dirección de correo electrónico válida');
+      event.preventDefault();
+      return false;
+    }
+
+       
+    return true;
+  }
+</script>-->
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+     
+        
         <title>GYM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,13 +144,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     </div>
                     <div style="background-color: #5C636B; width: 490px; margin-left: 35px; height: 40px; margin-top: -40px">
                         <input onClick="history.go(-1)" type="button" value="Volver"name="btnVolver" style=" margin-left: 300px; margin-top: 2px;width: 100px; height: 38px;background-color:#5C636B;font-size:14pt;font-weight:bold;color:aqua; border-style: none">                                                                          
-                         </div> 
+                    </div> 
                   
-                  
-                  
-                  
-                  
-                  
+                
+               
+          
                    <form form style="font-size: 12px" class="p-4" method="POST" action="SociosController?accion=insert">
                         <div class="col-5">   
                             <div "class="ml-auto">
@@ -115,7 +202,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                             <input type="text" style="font-size: 13px" class="form-control" id="telefono" name="telefono">                          
                            </div>
                         </div> 
-
                                 
                  
                 <div container>    
@@ -142,7 +228,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         
         
              
-
                
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
